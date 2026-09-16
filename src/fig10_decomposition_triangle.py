@@ -27,7 +27,11 @@ ROOT = Path(__file__).resolve().parents[1]
 D = ROOT / "results" / "decomposition"
 OUT = ROOT / "results" / "figdata"
 cross_file = Path(sys.argv[1]) if len(sys.argv) > 1 else D / "EUR87_r1_vs_YRI87.tsv"
-floor_file = Path(sys.argv[2]) if len(sys.argv) > 2 else D / "EUR87_r1_vs_EUR87_r2.tsv"
+# Every within-ancestry pair that exists, not just the first one computed. With a single pair
+# this is exactly the floor the figure always showed. With three it spans 0.545 to 0.606, and
+# drawing only the lowest would flatter the result by accident of which pair finished first:
+# a lower floor makes the cross-ancestry weights term look more distinct from noise.
+floor_files = [Path(sys.argv[2])] if len(sys.argv) > 2 else sorted(D.glob("EUR87_r*_vs_EUR87_r*.tsv"))
 H = np.sqrt(3) / 2
 
 
@@ -75,10 +79,15 @@ def triangle(ax, sh, title):
 
 cross = pd.read_csv(cross_file, sep="\t")
 cross = cross[~cross["degenerate"]]
-floor = pd.read_csv(floor_file, sep="\t") if floor_file.exists() else None
-if floor is not None:
-    floor = floor[~floor["degenerate"]]
-floor_is_draft = floor is not None and len(floor) < 200
+floors = []
+for fp in floor_files:
+    if not fp.exists():
+        continue
+    fd = pd.read_csv(fp, sep="\t")
+    fd = fd[~fd["degenerate"]]
+    floors.append((fp.stem, len(fd), float(fd["phi_w"].abs().median())))
+floor_vals = [v for _, _, v in floors]
+floor_is_draft = bool(floors) and min(n for _, n, _ in floors) < 200
 
 vs.apply()
 fig = plt.figure(figsize=(vs.DOUBLE, 3.7))
@@ -95,17 +104,32 @@ cb.ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:g}"))
 cb.outline.set_visible(False)
 
 # (b) sizes: cross-ancestry component medians next to the within-ancestry floor
-rows = [(r"$\phi_w$  weights", cross["phi_w"].abs().median(), floor["phi_w"].abs().median() if floor is not None else np.nan, vs.PHI_W),
+rows = [(r"$\phi_w$  weights", cross["phi_w"].abs().median(), float(np.median(floor_vals)) if floor_vals else np.nan, vs.PHI_W),
         (r"$\phi_D$  allele frequency", cross["phi_D"].abs().median(), 0.0, vs.PHI_D),
         (r"$\phi_R$  LD", cross["phi_R"].abs().median(), 0.0, vs.PHI_R)]
 ypos = np.arange(len(rows))[::-1]
-for yy, (label, c_val, f_val, color) in zip(ypos, rows):
+for i, (yy, (label, c_val, f_val, color)) in enumerate(zip(ypos, rows)):
     ax_bar.barh(yy + 0.17, c_val, height=0.3, color=color, lw=0)
     ax_bar.barh(yy - 0.17, f_val if np.isfinite(f_val) else 0, height=0.3, color=color, alpha=0.35, lw=0)
     ax_bar.text(c_val + 0.01, yy + 0.17, f"{c_val:.2f}", va="center", fontsize=7.5, color=vs.INK)
-    floor_label = "pending" if not np.isfinite(f_val) else ("0 by construction" if f_val == 0 else f"{f_val:.2f}")
-    ax_bar.text((f_val if np.isfinite(f_val) else 0) + 0.01, yy - 0.17, floor_label, va="center", fontsize=7.5,
-                color=vs.INK_2)
+    # Only the weights row has a spread to show: the frequency and LD floors are zero by
+    # construction for every within-ancestry pair. With one pair the rule has zero length,
+    # so it is suppressed and the panel renders exactly as it did before.
+    spread = i == 0 and len(floor_vals) > 1
+    if spread:
+        lo, hi = min(floor_vals), max(floor_vals)
+        ax_bar.plot([lo, hi], [yy - 0.17] * 2, color=color, lw=1.1, solid_capstyle="butt", zorder=4)
+        ax_bar.plot([lo, hi], [yy - 0.17] * 2, marker="|", ms=5.5, ls="none", color=color, zorder=5)
+    if not np.isfinite(f_val):
+        floor_label = "pending"
+    elif f_val == 0:
+        floor_label = "0 by construction"
+    elif spread:
+        floor_label = f"{min(floor_vals):.2f} to {max(floor_vals):.2f}"
+    else:
+        floor_label = f"{f_val:.2f}"
+    x_lab = (max(floor_vals) if spread else (f_val if np.isfinite(f_val) else 0)) + 0.01
+    ax_bar.text(x_lab, yy - 0.17, floor_label, va="center", fontsize=7.5, color=vs.INK_2)
 ax_bar.set_yticks(ypos)
 ax_bar.set_yticklabels([r[0] for r in rows], fontsize=8, color=vs.INK)
 ax_bar.tick_params(axis="y", length=0)
@@ -114,7 +138,8 @@ ax_bar.grid(True, axis="x")
 ax_bar.set_axisbelow(True)
 ax_bar.set_xlim(0, max(r[1] for r in rows) * 1.35)
 ax_bar.set_title("Size of each component", fontsize=8, color=vs.INK, loc="left", pad=28)
-ax_bar.text(0.0, 1.02, "solid: European vs Yoruba\nlight: two European draws (noise floor)"
+floor_txt = "two European draws" if len(floor_vals) <= 1 else f"{len(floor_vals)} pairs of European draws"
+ax_bar.text(0.0, 1.02, f"solid: European vs Yoruba\nlight: {floor_txt} (noise floor)"
             + ("  DRAFT" if floor_is_draft else ""), transform=ax_bar.transAxes, fontsize=7, color=vs.INK_2,
             va="bottom")
 
@@ -125,6 +150,10 @@ vs.save(fig, "fig10_decomposition_triangle")
 
 summary = {"genes": len(cross), "median_share_w": med[0], "median_share_D": med[1], "median_share_R": med[2],
            "median_abs_phi_w": rows[0][1], "median_abs_phi_D": rows[1][1], "median_abs_phi_R": rows[2][1],
-           "floor_genes": len(floor) if floor is not None else 0, "floor_median_abs_phi_w": rows[0][2]}
+           "floor_pairs": len(floors), "floor_genes": min((n for _, n, _ in floors), default=0),
+           "floor_median_abs_phi_w": rows[0][2],
+           "floor_min": min(floor_vals) if floor_vals else np.nan,
+           "floor_max": max(floor_vals) if floor_vals else np.nan,
+           "floor_detail": "; ".join(f"{s}={v:.3f} (n={n})" for s, n, v in floors)}
 pd.DataFrame([summary]).to_csv(OUT / "fig10_summary.tsv", sep="\t", index=False)
 print(pd.DataFrame([summary]).T.to_string(header=False))
