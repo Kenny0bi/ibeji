@@ -1,0 +1,381 @@
+{
+ "10.1016/j.cell.2024.12.002": {
+  "title": "Trans-ancestry genome-wide study of depression identifies 697 associations implicating cell types and pharmacotherapies",
+  "journal": "Cell",
+  "first_author": "Adams",
+  "year": 2025,
+  "years_all": [
+   2025
+  ]
+ },
+ "10.1038/s41467-018-03621-1": {
+  "title": "Exploring the phenotypic consequences of tissue specific gene expression variation inferred from GWAS summary statistics",
+  "journal": "Nature Communications",
+  "first_author": "Barbeira",
+  "year": 2018,
+  "years_all": [
+   2018
+  ]
+ },
+ "10.1186/s13742-015-0047-8": {
+  "title": "Second-generation PLINK: rising to the challenge of larger and richer datasets",
+  "journal": "Gigascience",
+  "first_author": "Chang",
+  "year": 2015,
+  "years_all": [
+   2015
+  ]
+ },
+ "10.1038/s41586-023-06079-4": {
+  "title": "Polygenic scoring accuracy varies across the genetic ancestry continuum",
+  "journal": "Nature",
+  "first_author": "Ding",
+  "year": 2023,
+  "years_all": [
+   2023
+  ]
+ },
+ "10.18637/jss.v033.i01": {
+  "title": "Regularization Paths for Generalized Linear Models via Coordinate Descent",
+  "journal": "Journal of Statistical Software",
+  "first_author": "Friedman",
+  "year": 2010,
+  "years_all": [
+   2010
+  ]
+ },
+ "10.1038/ng.3367": {
+  "title": "A gene-based association method for mapping traits using reference transcriptome data",
+  "journal": "Nature Genetics",
+  "first_author": "Gamazon",
+  "year": 2015,
+  "years_all": [
+   2015
+  ]
+ },
+ "10.1038/s41588-019-0344-8": {
+  "title": "Identification of common genetic risk variants for autism spectrum disorder",
+  "journal": "Nature Genetics",
+  "first_author": "",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.1038/s41467-025-67941-9": {
+  "title": "Leveraging genomic and transcriptomic data of diverse ancestry to uncover mechanisms of psychiatric risk in the adult and developing brain",
+  "journal": "Nature Communications",
+  "first_author": "Jajoo",
+  "year": 2025,
+  "years_all": [
+   2025
+  ]
+ },
+ "10.1371/journal.pgen.1008927": {
+  "title": "On the cross-population generalizability of gene expression prediction models",
+  "journal": "PLOS Genetics",
+  "first_author": "Keys",
+  "year": 2020,
+  "years_all": [
+   2020
+  ]
+ },
+ "10.1038/nature15393": {
+  "title": "A global reference for human genetic variation",
+  "journal": "Nature",
+  "first_author": "",
+  "year": 2015,
+  "years_all": [
+   2015
+  ]
+ },
+ "10.1038/nature12531": {
+  "title": "Transcriptome and genome sequencing uncovers functional variation in humans",
+  "journal": "Nature",
+  "first_author": "",
+  "year": 2013,
+  "years_all": [
+   2013
+  ]
+ },
+ "10.1016/j.ajhg.2017.03.004": {
+  "title": "Human Demographic History Impacts Genetic Risk Prediction across Diverse Populations",
+  "journal": "The American Journal of Human Genetics",
+  "first_author": "Martin",
+  "year": 2017,
+  "years_all": [
+   2017
+  ]
+ },
+ "10.1371/journal.pgen.1007586": {
+  "title": "Genetic architecture of gene expression traits across diverse populations",
+  "journal": "PLOS Genetics",
+  "first_author": "Mogil",
+  "year": 2018,
+  "years_all": [
+   2018
+  ]
+ },
+ "10.1038/s41588-021-00857-4": {
+  "title": "Genome-wide association study of more than 40,000 bipolar disorder cases provides new insights into the underlying biology",
+  "journal": "Nature Genetics",
+  "first_author": "Mullins",
+  "year": 2021,
+  "years_all": [
+   2021
+  ]
+ },
+ "10.1038/s41588-024-01707-9": {
+  "title": "Genome-wide association analyses identify 95 risk loci and provide insights into the neurobiology of post-traumatic stress disorder",
+  "journal": "Nature Genetics",
+  "first_author": "Nievergelt",
+  "year": 2024,
+  "years_all": [
+   2024
+  ]
+ },
+ "10.1137/130936233": {
+  "title": "Sobol' Indices and Shapley Value",
+  "journal": "SIAM/ASA Journal on Uncertainty Quantification",
+  "first_author": "Owen",
+  "year": 2014,
+  "years_all": [
+   2014
+  ]
+ },
+ "10.1038/s41586-022-04434-5": {
+  "title": "Mapping genomic loci implicates genes and synaptic biology in schizophrenia",
+  "journal": "Nature",
+  "first_author": "Trubetskoy",
+  "year": 2022,
+  "years_all": [
+   2022
+  ]
+ },
+ "10.1038/s41467-020-17719-y": {
+  "title": "Theoretical and empirical quantification of the accuracy of polygenic scores in ancestry divergent populations",
+  "journal": "Nature Communications",
+  "first_author": "Wang",
+  "year": 2020,
+  "years_all": [
+   2020
+  ]
+ },
+ "10.1371/journal.pgen.1007889": {
+  "title": "Integrating predicted transcriptome from multiple tissues improves association detection",
+  "journal": "PLOS Genetics",
+  "first_author": "Barbeira",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.1038/s41467-026-75193-4": {
+  "title": "Multi-ancestry gene expression models amplify transcriptome-wide association study discovery and validation",
+  "journal": "Nature Communications",
+  "first_author": "Bledsoe",
+  "year": 2026,
+  "years_all": [
+   2026
+  ]
+ },
+ "10.1016/j.ajhg.2016.05.001": {
+  "title": "Transethnic Genetic-Correlation Estimates from Summary Statistics",
+  "journal": "The American Journal of Human Genetics",
+  "first_author": "Brown",
+  "year": 2016,
+  "years_all": [
+   2016
+  ]
+ },
+ "10.1146/annurev.genom.9.081307.164258": {
+  "title": "African Genetic Diversity: Implications for Human Demographic History, Modern Human Origins, and Complex Disease Mapping",
+  "journal": "Annual Review of Genomics and Human Genetics",
+  "first_author": "Campbell",
+  "year": 2008,
+  "years_all": [
+   2008
+  ]
+ },
+ "10.1038/s41467-019-11112-0": {
+  "title": "Analysis of polygenic risk\u00a0score usage and performance in diverse human populations",
+  "journal": "Nature Communications",
+  "first_author": "Duncan",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.1126/science.aad6469": {
+  "title": "Shared molecular neuropathology across major psychiatric disorders parallels polygenic overlap",
+  "journal": "Science",
+  "first_author": "Gandal",
+  "year": 2018,
+  "years_all": [
+   2018
+  ]
+ },
+ "10.1126/science.aaz1776": {
+  "title": "The GTEx Consortium atlas of genetic regulatory effects across human tissues",
+  "journal": "Science",
+  "first_author": "",
+  "year": 2020,
+  "years_all": [
+   2020
+  ]
+ },
+ "10.1038/nature13997": {
+  "title": "The African Genome Variation Project shapes medical genetics in Africa",
+  "journal": "Nature",
+  "first_author": "Gurdasani",
+  "year": 2015,
+  "years_all": [
+   2014,
+   2015
+  ]
+ },
+ "10.1038/ng.3506": {
+  "title": "Integrative approaches for large-scale transcriptome-wide association studies",
+  "journal": "Nature Genetics",
+  "first_author": "Gusev",
+  "year": 2016,
+  "years_all": [
+   2016
+  ]
+ },
+ "10.1038/s41588-018-0092-1": {
+  "title": "Transcriptome-wide association study of schizophrenia and chromatin activity yields mechanistic disease insights",
+  "journal": "Nature Genetics",
+  "first_author": "Gusev",
+  "year": 2018,
+  "years_all": [
+   2018
+  ]
+ },
+ "10.1038/s41588-019-0367-1": {
+  "title": "Probabilistic fine-mapping of transcriptome-wide association studies",
+  "journal": "Nature Genetics",
+  "first_author": "Mancuso",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.1038/s41588-019-0379-x": {
+  "title": "Clinical use of current polygenic risk scores may exacerbate health disparities",
+  "journal": "Nature Genetics",
+  "first_author": "Martin",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.3389/fgene.2019.00261": {
+  "title": "Accuracy of Gene Expression Prediction From Genotype Data With PrediXcan Varies Across and Within Continental Populations",
+  "journal": "Frontiers in Genetics",
+  "first_author": "Mikhaylova",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.1038/538161a": {
+  "title": "Genomics is failing on diversity",
+  "journal": "Nature",
+  "first_author": "Popejoy",
+  "year": 2016,
+  "years_all": [
+   2016
+  ]
+ },
+ "10.1515/9781400881970-018": {
+  "title": "17. A Value for n-Person Games",
+  "journal": "Contributions to the Theory of Games (AM-28), Volume II",
+  "first_author": "Shapley",
+  "year": 1953,
+  "years_all": [
+   1953
+  ]
+ },
+ "10.1038/s41467-021-21286-1": {
+  "title": "Population-specific causal disease effect sizes in functionally important regions impacted by selection",
+  "journal": "Nature Communications",
+  "first_author": "Shi",
+  "year": 2021,
+  "years_all": [
+   2021
+  ]
+ },
+ "10.1016/j.cell.2019.02.048": {
+  "title": "The Missing Diversity in Human Genetic Studies",
+  "journal": "Cell",
+  "first_author": "Sirugo",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.1038/nprot.2011.457": {
+  "title": "Using probabilistic estimation of expression residuals (PEER) to obtain increased power and interpretability of gene expression analyses",
+  "journal": "Nature Protocols",
+  "first_author": "Stegle",
+  "year": 2012,
+  "years_all": [
+   2012
+  ]
+ },
+ "10.1371/journal.pgen.1002639": {
+  "title": "Patterns of Cis Regulatory Variation in Diverse Human Populations",
+  "journal": "PLoS Genetics",
+  "first_author": "Stranger",
+  "year": 2012,
+  "years_all": [
+   2012
+  ]
+ },
+ "10.1038/s41588-019-0385-z": {
+  "title": "Opportunities and challenges for transcriptome-wide association studies",
+  "journal": "Nature Genetics",
+  "first_author": "Wainberg",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.1126/science.aat8464": {
+  "title": "Comprehensive functional genomic resource and integrative model for the human brain",
+  "journal": "Science",
+  "first_author": "Wang",
+  "year": 2018,
+  "years_all": [
+   2018
+  ]
+ },
+ "10.1038/s41586-019-1310-4": {
+  "title": "Genetic analyses of diverse populations improves discovery for complex traits",
+  "journal": "Nature",
+  "first_author": "Wojcik",
+  "year": 2019,
+  "years_all": [
+   2019
+  ]
+ },
+ "10.1038/ng.3538": {
+  "title": "Integration of summary data from GWAS and eQTL studies predicts complex trait gene targets",
+  "journal": "Nature Genetics",
+  "first_author": "Zhu",
+  "year": 2016,
+  "years_all": [
+   2016
+  ]
+ },
+ "10.1111/j.1467-9868.2005.00503.x": {
+  "title": "Regularization and Variable Selection Via the Elastic Net",
+  "journal": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+  "first_author": "Zou",
+  "year": 2005,
+  "years_all": [
+   2005
+  ]
+ }
+}

@@ -1,0 +1,95 @@
+# ibeji: figure plan and registry
+
+Minimum 17 figures in the paper; at least 5 in the README. Every figure listed here gets a status, a source script, and a final caption once rendered and checked by eye.
+
+## Design rules for this project
+
+- **Keep the field's grammar, rebuild the form.** Genome position and −log10 p stay readable to a geneticist at a glance; the generic templates go.
+- **The two ancestries are twins, not opposites.** European and Yoruba get two hues of equal lightness and equal visual weight. No light/dark or skin-tone-like mapping, ever. The mirror (one above an axis, one below) is the recurring motif. It draws on the Yoruba belief that twins share one soul (ere ibeji figures are carved when a twin dies so the pair stays whole), so the two models are always shown together as a pair.
+- **Color follows its job** (dataviz method): categorical for identity (ancestry, decomposition component), sequential single hue for magnitude, diverging for signed quantities (weights, phi components) with a neutral gray midpoint.
+- **Every categorical palette is validated** with the dataviz script before a figure ships (light surface, paper white).
+- **Print first.** The paper is IEEE two-column, so single-column figures are 3.5 in wide, double-column 7.16 in. Vector PDF for the paper, PNG at 300 dpi for the README.
+- **Text never wears the data color.** Labels in ink; identity comes from the mark beside the text.
+- **Render and look before it counts.**
+- **Automatic checks on every save** (`viz_style.save`), each proven by `src/test_viz_checks.py` (11 cases, all passing):
+  1. text overlapping other text
+  2. text running outside the figure
+  3. text sitting on another panel's plotting area (insets and deliberately stacked panels excepted)
+  4. legend swatches whose color or transparency does not appear in the plot
+  5. numeric tick labels that misstate their tick value (e.g., −0.25 printed as −0.2); axes drawn in transformed units declare `axis.ibeji_value_of` and are checked against the transformed value
+  6. any text below 7 pt at final print size (IEEE: 6 pt minimum, 8 pt preferred)
+  A figure counts only when all six checks pass AND the PNG has been inspected.
+- **Print and poster quality** (Kenny, 2026-09-15): every figure is saved as vector PDF and SVG (rasterized layers at 600 dpi) plus a 600 dpi PNG. Base text sizes: 8 pt, ticks and legends 7.5 pt, titles 8.5 pt; nothing below 7 pt.
+- **Manual inspection checklist** (things no automatic check can judge):
+  - Every color in every panel is named by a legend, a key, or a direct label in that same figure. Symbols like φ_w are never the only explanation.
+  - No decorative line can be mistaken for a missing or cut-off mark (Fig 12's waterfall connectors formed empty boxes; removed).
+  - No large empty region makes a panel look unfinished.
+  - Each panel label (a, b, c...) sits unambiguously on its own panel.
+  - No text is crossed by a line, arrow or mark (Fig 1's DNAJB7 label was crossed by an arrow).
+  - Dense marks stay legible at print size; drop marker heads before letting them pile up (Fig 1 weight glyphs).
+  - When rotated categorical labels keep colliding, change the encoding, not the rotation. Fig 19's disorder names could not fit three across a 1.4 in axis at any rotation or panel size; short codes with a key line solved it immediately.
+  - A y tick label grows leftward out of its own panel. With two panels side by side, a long category name lands on the neighbour's plotting area (Fig 14's first version wrote across panel a). Keep such labels to two or three words and leave a real gap between panels, or move the names inside the panel.
+  - Values outside a plotted range are counted and annotated at the edge, never piled into the end bins. Fig 11's first version clipped into the end bins and produced two walls that read as modes of the distribution.
+  - A colour swatch must sit beside the label it belongs to. Fig 11's first version placed all three with one transform and stranded them in a corner next to the wrong label. Where a filled mark already sits next to its label, no swatch is needed at all.
+  - A reference line spanning the full axis passes through anything centred on it. Fig 11's "half" label sat on its own dashed line; offset such labels to one side.
+  - No mark is cut off by the axis limits. Set the limit from the data, not a round number that happens to sit below the tallest bar (Fig 9's first version clipped its tallest columns at both ends).
+  - A sort key with a secondary tiebreak can manufacture a pattern that looks like a finding. Fig 9's first version broke ties by model size and produced a repeating sawtooth; a stable sort on the primary key alone removed it.
+  - Moving a label away from a line is not enough; check it landed in open space. Fig 8's label was moved once and still sat under its own curve.
+  - At most one label per side at a panel's edge: two edge labels either stack on each other or land on the data, so only the stronger hit is named (Fig 17 PTSD panel: CD40 left unlabeled there; it is named in the depression panel).
+  - Reference lines on a transformed axis are computed through many points in data space. A straight segment between two endpoints is only correct on linear axes (Fig 13's full-transfer line was drawn straight on a square-root axis; the true line is the curve y = x²).
+- History of what the checks caught: Fig 2 legend drawn in gray for blue/orange bars (user caught it; check 4 added); Fig 12 y-label on panel b (check 3 added); Fig 12 waterfall ticks rounded to one decimal (check 5 added).
+
+## Planned figures
+
+| # | Working title | Form | What it shows | Status |
+|---|---|---|---|---|
+| 1 | Twin design | One dot per person (445), European arm mirrored above the Yoruba arm; EUR87 draw 1 filled, rest hollow; real DNAJB7 weight stems (EUR87_r1 above, YRI87 below, square-root height); decomposition and TWAS panels | 445 genomes split into EUR358, EUR87 x5 and YRI87; elastic net; decomposition and TWAS branches | done: layout check OK, inspected 2026-09-14 (`src/fig01_design.py`) |
+| 2 | The ground each twin stands on | (a) genome map, every 1 Mb tile of chr1 to chr22, diverging indigo to camwood by the deviation of its Yoruba-only share from the genome-wide 51% (the MHC on chr6 stands out indigo); (b) mirrored allele-frequency spectrum, European above, Yoruba below, binned on allele counts k/174 | 17.3M SNVs: 13% common only in European, 36% both, 51% only in Yoruba; 58% of Yoruba common SNVs not common in the European sample | done: layout OK, inspected (`src/07_fig_frequency_ld.py`) |
+| 3 | LD decays faster in Ibadan | (a) mirrored LD triangles around DNAJB7, chr22:41.13 to 41.38 Mb (150 SNVs common in both), linear r² scale; (b) mean r² vs distance on chr22, both at n = 87 | Shorter LD in YRI at equal sample size: region mean r² 0.33 vs 0.22; genome curve 0.54 vs 0.42 at 0.5 kb | done: layout OK, inspected (`src/07_fig_frequency_ld.py`) |
+| 4 | Model yield | (a) funnel per training set: genes attempted, cleared cross-validation, usable model, counts printed; (b) usable models per set, European draws as a group with their spread shaded across the panel so the Yoruba point can be read against it | Two European draws differ by 67 genes and the Yoruba set falls inside that spread, so ancestry makes no difference to yield at equal n. About two thirds of genes that clear cross-validation still end with an empty final fit | done 2026-09-15 (`src/fig04_yield.py`); six checks OK; inspected. Includes any set with all 22 chromosomes automatically, so it extends itself as EUR358 and draws 3 to 5 finish |
+| 5 | Mirror genome of accuracy | One stem per usable model at its genome position, EUR87 above axis, YRI87 below; alternating chromosome bands; top genes (at least 200 Mb apart) named with ringed tip dots; model labels outside the plot | Cross-validated R² per gene along the genome | final 2026-09-15 on complete EUR87_r1 and YRI87 (`src/fig05_accuracy_mirror.py`); layout OK; inspected |
+| 6 | Do the twins agree on which genes are predictable? | Log-density hexbin of cross-validated R², EUR87_r1 vs YRI87, square-root axes (declared transform), usability thresholds, diagonal, ringed positive controls | Concordance of predictability: usable in both 562, only one 1,710 / 1,645 | final 2026-09-15 (`src/fig06_r2_concordance.py`); layout OK; inspected |
+| 7 | What sample size alone buys | Paired slope, EUR87 to EUR358 | The sample-size component, separate from ancestry | planned |
+| 8 | Weight agreement on shared SNPs | (a) scatter of the two weights for every SNP both models chose for the same gene, quadrant counts, sign-discordant pairs ringed; (b) sign agreement and weight correlation within six equal groups of weight size, log x | The two models agree closely about the SNPs they both select | done 2026-09-15 (`src/fig08_weight_agreement.py`); six checks OK; inspected |
+| 9 | Shared and private predictors | (a) one column per gene, shared SNPs as a band straddling the axis, European-only above and Yoruba-only below, sorted by shared count, axis scaled to the largest model; (b) cumulative distribution of per-gene overlap | The two models almost never rest on the same variants | done 2026-09-15 (`src/fig09_shared_predictors.py`); six checks OK; inspected |
+| 10 | The decomposition triangle | (a) ternary log-density hexbin of each gene's |φ| shares, clipped to the triangle, median gene ringed, colored corner markers; (b) median |φ_w|, |φ_D|, |φ_R| for European vs Yoruba (solid) next to the European-draw noise floor (light; D and R zero by construction) | Where genes sit between weights, frequency and LD, read against what two European draws already produce | final 2026-09-15 (`src/fig10_decomposition_triangle.py`); six checks OK; inspected. Panel b now uses the genome-wide floor (699 genes); DRAFT label dropped automatically. Floor median |phi_w| 0.54 against 0.75 across ancestries |
+| 11 | Size and sign of each component | (a) signed density ridge per component on a common axis, each scaled to its own height, median ticked, out-of-range values drawn at the edge; (b) share of genes where the component is positive with a 95% interval against a half reference | The weights component is wide and centred on zero; the frequency and LD components are small but systematically directional | done 2026-09-15 (`src/fig11_component_signs.py`); six checks OK; inspected |
+| 12 | Anatomy of one disagreement | DNAJB7: (a) weight stems EUR87_r1 above, YRI87 below, shared SNPs banded; (b) MAF links per SNP; (c) mirrored LD triangles; (d) floating waterfall of φ_w, φ_D, φ_R and Δ with color key | A worked example gene (a schizophrenia and bipolar TWAS hit), start to finish | drafted 2026-09-14 (`src/fig12_locus.py`); layout OK; inspected; final numbers unchanged by genome-wide training (chr22 models reused) |
+| 13 | Crossing the ocean | Two panels (EUR models in YRI genotypes, YRI models in EUR genotypes): log-density hexbin of home cv R² (sqrt axis, declared transform) against signed transfer r², running median by home-accuracy decile with middle-half band, full-transfer curve, zero line | Accuracy lost when a model crosses ancestries, on all usable models | drafted 2026-09-15 (`src/fig13_transfer.py`); layout OK; reference curve corrected; inspected |
+| 14 | What carries a model across | (a) cross-population accuracy against the number of SNPs both models chose, both directions, median with middle half shaded; (b) partial rank correlation of shared SNPs, frequency divergence and LD divergence with cross-population accuracy, holding home accuracy fixed, with bootstrap intervals | Shared predictors dominate portability; frequency divergence hurts European models specifically; the LD term is confounded and flagged, not read causally | done 2026-09-15 (`src/fig14_portability.py`); six checks OK; inspected. REDESIGNED: the planned outcome "accuracy loss" was abandoned because home accuracy is a nested-CV estimate while cross-population accuracy uses the final model, so their difference is negative for 28% and 48% of genes; see the 07:08 entry in ANALYSIS_PLAN.md |
+| 15 | What the other population can see | Mirrored frequency histogram: SNPs in European models binned by MAF in the Yoruba sample (above), SNPs in Yoruba models by MAF in the European sample (below), with the rare-or-absent bin called out; variance-retained distributions to be added as panel b once European TWAS exists | Coverage: why Yoruba models lose signal on European GWAS. (Moved here from the Fig 2 plan, where a third panel would have crowded the genome map.) | panel a final 2026-09-15 (`src/fig15_model_snps.py`); layout OK; inspected; panel b (variance retained) pending European TWAS |
+| 16 | Autism TWAS in the mirror | Mirrored Manhattan, European model above, YRI87 below; dashed Bonferroni line per side; genes significant with both joined by a gray line; top hits named with ringed dots | Autism associations by training ancestry | final 2026-09-15 on full EUR87_r1 and YRI87 TWAS (`src/fig16_mirror_manhattan.py`); layout OK; inspected. Autism: 0 significant with either model |
+| 17 | Four disorders in the mirror | 2x2 small multiples of Figure 16 for SCZ, BIP, MDD, PTSD, counts in each panel title | Same comparison across four psychiatric disorders | final 2026-09-15, same script; layout OK; inspected. Significant EUR/YRI/both: SCZ 38/45/8, BIP 17/14/3, MDD 16/15/3, PTSD 8/9/0 |
+| 18 | Why an association is ancestry-specific | (a) stacked composition per disorder and per model set: no usable model in the other ancestry, versus dominant decomposition component where both models exist; (b) the same totals as one ranking | 76% of ancestry-specific hits exist because the other ancestry had no usable model at all; 21% weight-dominated; 3% frequency-dominated; LD dominates none | done 2026-09-15 (`src/fig18_specific_hits.py`); six checks OK; inspected. REDESIGNED: the planned version would have been computed on 31 of 129 hits while silently dropping the other 98; see the 07:17 entry in ANALYSIS_PLAN.md |
+| 19 | Shared genes across disorders | (a, b) pairwise overlap matrix of Bonferroni-significant genes per model set, counts printed, short disorder codes with an expanding key; (c) genes reaching three or more disorders, dot per model set | NT5DC2 is the only cross-disorder gene both ancestries recover; BTN3A2, CD40 and BTN2A1 European-only, ZNF192P1 Yoruba-only | done 2026-09-15 (`src/fig19_cross_disorder.py`); six checks OK; inspected. REDESIGNED: a five-axis hive plot over about a dozen edges would be decoration; see the 07:28 entry in ANALYSIS_PLAN.md |
+| 20 | Does the answer depend on the draw? | (a) each gene's weights share in one European draw against another; (b) which component is largest, draw against draw, as a 3x3 matrix labelled with the component symbols; (c) median share per component, one dot per draw | Population-level answer is stable (median shares move 0.64 to 0.65, 0.21 to 0.20, 0.10 to 0.10) but the per-gene answer is not: the largest component changes for one gene in four | done 2026-09-15 (`src/fig20_replicates.py`); six checks OK; inspected. Built on the two existing draws rather than waiting for draws 3 to 5; uses any two completed EUR87 draws so it extends itself |
+| A1 | Animation: the Shapley cube | Manim scene ShapleyCube (`animation/ibeji_scene.py`), about 40 s: real DNAJB7 weights, the variance formula, the cube of 8 real log V values, all 6 swap paths, the averaged components summing to Δ | The central math of the project on real numbers, verified against the decomposition to 1.3e-15 | done 2026-09-15: `figures/ibeji_shapley_cube.mp4` (1080p60, 39.6 s, 1.9 MB) and `.gif` (900 px loop, 2.4 MB); final frames inspected |
+| S1 | QQ plots and genomic inflation | Five small multiples, one per trait, both model sets drawn together against the null diagonal, lambda printed per panel | Calibration diagnostic; lambda 1.08 to 1.89, comparable between the two model sets within every trait | built 2026-09-15 (`src/figS1_qq.py`); six checks OK |
+
+## Palette (validated 2026-09-14)
+
+Categorical order, light mode on paper white (#ffffff), checked with the dataviz `validate_palette.js`:
+
+`#3056c8, #e0632f, #159b77, #d69a00, #d4508a, #4c8c1c, #6b4ac2, #c33b3b`
+
+- All 8 inside the lightness band and above the chroma floor.
+- Worst adjacent CVD ΔE 10.2 (protan), normal-vision ΔE 21.8.
+- First three slots also pass all-pairs (normal-vision ΔE 26.0), which the scatter-type figures need.
+- WARN: gold `#d69a00` sits at 2.48:1 on white, so any gold mark must carry a visible direct label (relief rule).
+
+| Role | Hex | Name |
+|---|---|---|
+| European-trained model | `#3056c8` | indigo (adire dye) |
+| Yoruba-trained model | `#e0632f` | camwood (osun) |
+| Component: weights (phi_w) | `#159b77` | palm green |
+| Component: allele frequency (phi_D) | `#d69a00` | gold (label required) |
+| Component: LD (phi_R) | `#d4508a` | coral |
+| Coverage | `#6b4ac2` | violet |
+
+The component roles don't sit in adjacent validated slots, so the exact four-color set used in Figure 18 gets its own validator run before that figure ships.
+
+Diverging (signed weights, phi values): indigo `#3056c8` ↔ neutral gray `#efeeea` ↔ camwood `#e0632f` would conflate sign with ancestry, so signed quantities use blue ↔ red from the dataviz reference instead: `#2a78d6` ↔ `#f0efec` ↔ `#e34948`, and they never appear in the same panel as the twin pair.
+
+Sequential (density): one hue ramp, reference blue `#cde2fb` → `#0d366b`.
+
+Ink: primary `#0b0b0b`, secondary `#52514e`, muted axis `#898781`, hairline grid `#e1e0d9`.

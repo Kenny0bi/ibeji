@@ -1,0 +1,588 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.29)  15 SEP 2026 13:00
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ibeji.tex
+(./ibeji.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+(./IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
+-- See the "IEEEtran_HOWTO" manual for usage information.
+-- http://www.michaelshell.org/tex/ieeetran/
+\@IEEEtrantmpdimenA=\dimen150
+\@IEEEtrantmpdimenB=\dimen151
+\@IEEEtrantmpdimenC=\dimen152
+\@IEEEtrantmpcountA=\count276
+\@IEEEtrantmpcountB=\count277
+\@IEEEtrantmpcountC=\count278
+\@IEEEtrantmptoksA=\toks17
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 503.
+(/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+-- Using 8.5in x 11in (letter) paper.
+-- Using PDF output.
+\@IEEEnormalsizeunitybaselineskip=\dimen153
+-- This is a 10 point document.
+LaTeX Encoding Info:    Redeclaring text command \textunderscore (encoding ?) on input line 937.
+\CLASSINFOnormalsizebaselineskip=\dimen154
+\CLASSINFOnormalsizeunitybaselineskip=\dimen155
+\IEEEnormaljot=\dimen156
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+\IEEEquantizedlength=\dimen157
+\IEEEquantizedlengthdiff=\dimen158
+\IEEEquantizedtextheightdiff=\dimen159
+\IEEEilabelindentA=\dimen160
+\IEEEilabelindentB=\dimen161
+\IEEEilabelindent=\dimen162
+\IEEEelabelindent=\dimen163
+\IEEEdlabelindent=\dimen164
+\IEEElabelindent=\dimen165
+\IEEEiednormlabelsep=\dimen166
+\IEEEiedmathlabelsep=\dimen167
+\IEEEiedtopsep=\skip49
+\c@section=\count279
+\c@subsection=\count280
+\c@subsubsection=\count281
+\c@paragraph=\count282
+\c@IEEEsubequation=\count283
+\abovecaptionskip=\skip50
+\belowcaptionskip=\skip51
+\c@figure=\count284
+\c@table=\count285
+\@IEEEeqnnumcols=\count286
+\@IEEEeqncolcnt=\count287
+\@IEEEsubeqnnumrollback=\count288
+\@IEEEquantizeheightA=\dimen168
+\@IEEEquantizeheightB=\dimen169
+\@IEEEquantizeheightC=\dimen170
+\@IEEEquantizeprevdepth=\dimen171
+\@IEEEquantizemultiple=\count289
+\@IEEEquantizeboxA=\box53
+\@IEEEtmpitemindent=\dimen172
+\IEEEPARstartletwidth=\dimen173
+\c@IEEEbiography=\count290
+\@IEEEtranrubishbin=\box54
+)
+** ATTENTION: Overriding command lockouts (line 2).
+(/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/cite/cite.sty
+LaTeX Info: Redefining \cite on input line 302.
+LaTeX Info: Redefining \nocite on input line 332.
+Package: cite 2015/02/27  v 5.5
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2026/05/19 v2.18d AMS math features
+\@mathmargin=\skip52
+
+For additional information on amsmath, use the `?' option.
+(/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks18
+\ex@=\dimen174
+)) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen175
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count291
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count292
+\leftroot@=\count293
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count294
+\DOTSCASE@=\count295
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen176
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count296
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count297
+\dotsspace@=\muskip17
+\c@parentequation=\count298
+\dspbrk@lvl=\count299
+\tag@help=\toks19
+\row@=\count300
+\column@=\count301
+\maxfields@=\count302
+\andhelp@=\toks20
+\eqnshift@=\dimen177
+\alignsep@=\dimen178
+\tagshift@=\dimen179
+\tagwidth@=\dimen180
+\totwidth@=\dimen181
+\lineht@=\dimen182
+\@envbody=\toks21
+\multlinegap=\skip53
+\multlinetaggap=\skip54
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2965.
+LaTeX Info: Redefining \] on input line 2966.
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen183
+\Gin@req@width=\dimen184
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen185
+\lightrulewidth=\dimen186
+\cmidrulewidth=\dimen187
+\belowrulesep=\dimen188
+\belowbottomsep=\dimen189
+\aboverulesep=\dimen190
+\abovetopsep=\dimen191
+\cmidrulesep=\dimen192
+\cmidrulekern=\dimen193
+\defaultaddspace=\dimen194
+\@cmidla=\count303
+\@cmidlb=\count304
+\@aboverulesep=\dimen195
+\@belowrulesep=\dimen196
+\@thisruleclass=\count305
+\@lastruleclass=\count306
+\@thisrulewidth=\dimen197
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-06-17 v7.01r Hypertext links for LaTeX
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count307
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count308
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen198
+\Hy@linkcounter=\count309
+\Hy@pagecounter=\count310
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-06-17 v7.01r Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count311
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-06-17 v7.01r Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4070.
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count312
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen199
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count313
+\Field@Width=\dimen256
+\Fld@charsize=\dimen257
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring ON on input line 6109.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count314
+\c@Item=\count315
+\c@Hfootnote=\count316
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-06-17 v7.01r Hyperref driver for pdfTeX
+\Fld@listcount=\count317
+\c@bookmark@seq@number=\count318
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip55
+) (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-08-10 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count319
+) (./ibeji.aux)
+\openout1 = `ibeji.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+-- Lines per column: 56 (exact).
+(/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+))
+Package hyperref Info: Link coloring ON on input line 14.
+ (./ibeji.out) (./ibeji.out)
+\@outlinefile=\write3
+\openout3 = `ibeji.out'.
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/Users/macbookpro/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/enc/dvips/base/8r.enc}
+
+
+]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 51.
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
+ (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) [2] [3]
+<../figures/fig01_design.pdf, id=259, 415.48024pt x 182.88503pt>
+File: ../figures/fig01_design.pdf Graphic file (type pdf)
+<use ../figures/fig01_design.pdf>
+Package pdftex.def Info: ../figures/fig01_design.pdf  used on input line 136.
+(pdftex.def)             Requested size: 516.0pt x 227.1518pt.
+<../figures/fig02_frequency_landscape.pdf, id=261, 518.19954pt x 494.40836pt>
+File: ../figures/fig02_frequency_landscape.pdf Graphic file (type pdf)
+<use ../figures/fig02_frequency_landscape.pdf>
+Package pdftex.def Info: ../figures/fig02_frequency_landscape.pdf  used on input line 146.
+(pdftex.def)             Requested size: 516.0pt x 492.31743pt.
+<../figures/fig03_ld_decay.pdf, id=263, 521.55815pt x 192.99063pt>
+File: ../figures/fig03_ld_decay.pdf Graphic file (type pdf)
+<use ../figures/fig03_ld_decay.pdf>
+Package pdftex.def Info: ../figures/fig03_ld_decay.pdf  used on input line 155.
+(pdftex.def)             Requested size: 516.0pt x 190.95235pt.
+<../figures/fig05_accuracy_mirror.pdf, id=265, 519.35307pt x 191.59238pt>
+File: ../figures/fig05_accuracy_mirror.pdf Graphic file (type pdf)
+<use ../figures/fig05_accuracy_mirror.pdf>
+Package pdftex.def Info: ../figures/fig05_accuracy_mirror.pdf  used on input line 165.
+(pdftex.def)             Requested size: 516.0pt x 190.36694pt.
+<../figures/fig06_r2_concordance.pdf, id=267, 252.35178pt x 250.31882pt>
+File: ../figures/fig06_r2_concordance.pdf Graphic file (type pdf)
+<use ../figures/fig06_r2_concordance.pdf>
+Package pdftex.def Info: ../figures/fig06_r2_concordance.pdf  used on input line 174.
+(pdftex.def)             Requested size: 252.0pt x 249.97443pt.
+ [4]
+<../figures/fig04_yield.pdf, id=280, 489.83603pt x 242.91214pt>
+File: ../figures/fig04_yield.pdf Graphic file (type pdf)
+<use ../figures/fig04_yield.pdf>
+Package pdftex.def Info: ../figures/fig04_yield.pdf  used on input line 186.
+(pdftex.def)             Requested size: 516.0pt x 255.89552pt.
+<../figures/fig08_weight_agreement.pdf, id=284, 489.02664pt x 251.48392pt>
+File: ../figures/fig08_weight_agreement.pdf Graphic file (type pdf)
+<use ../figures/fig08_weight_agreement.pdf>
+Package pdftex.def Info: ../figures/fig08_weight_agreement.pdf  used on input line 200.
+(pdftex.def)             Requested size: 516.0pt x 265.36674pt.
+<../figures/fig09_shared_predictors.pdf, id=285, 508.50267pt x 256.59677pt>
+File: ../figures/fig09_shared_predictors.pdf Graphic file (type pdf)
+<use ../figures/fig09_shared_predictors.pdf>
+Package pdftex.def Info: ../figures/fig09_shared_predictors.pdf  used on input line 207.
+(pdftex.def)             Requested size: 516.0pt x 260.37834pt.
+ [5 <../figures/fig01_design.pdf>]
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+ [6 <../figures/fig02_frequency_landscape.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+<../figures/fig10_decomposition_triangle.pdf, id=345, 516.69637pt x 267.46812pt>
+File: ../figures/fig10_decomposition_triangle.pdf Graphic file (type pdf)
+<use ../figures/fig10_decomposition_triangle.pdf>
+Package pdftex.def Info: ../figures/fig10_decomposition_triangle.pdf  used on input line 227.
+(pdftex.def)             Requested size: 516.0pt x 267.1083pt.
+<../figures/fig11_component_signs.pdf, id=346, 451.70197pt x 253.14073pt>
+File: ../figures/fig11_component_signs.pdf Graphic file (type pdf)
+<use ../figures/fig11_component_signs.pdf>
+Package pdftex.def Info: ../figures/fig11_component_signs.pdf  used on input line 234.
+(pdftex.def)             Requested size: 516.0pt x 289.18213pt.
+<../figures/fig12_locus_DNAJB7.pdf, id=347, 521.86288pt x 409.9473pt>
+File: ../figures/fig12_locus_DNAJB7.pdf Graphic file (type pdf)
+<use ../figures/fig12_locus_DNAJB7.pdf>
+Package pdftex.def Info: ../figures/fig12_locus_DNAJB7.pdf  used on input line 241.
+(pdftex.def)             Requested size: 516.0pt x 405.37367pt.
+ [7 <../figures/fig03_ld_decay.pdf> <../figures/fig05_accuracy_mirror.pdf>]
+Underfull \hbox (badness 4416) in paragraph at lines 251--252
+[]\OT1/ptm/m/n/10 This bounds what the de-com-po-si-tion sup-ports. The
+ []
+
+<../figures/fig20_replicates.pdf, id=381, 509.26059pt x 221.71896pt>
+File: ../figures/fig20_replicates.pdf Graphic file (type pdf)
+<use ../figures/fig20_replicates.pdf>
+Package pdftex.def Info: ../figures/fig20_replicates.pdf  used on input line 255.
+(pdftex.def)             Requested size: 516.0pt x 224.65497pt.
+<../figures/fig15_model_snps.pdf, id=383, 256.31697pt x 210.15036pt>
+File: ../figures/fig15_model_snps.pdf Graphic file (type pdf)
+<use ../figures/fig15_model_snps.pdf>
+Package pdftex.def Info: ../figures/fig15_model_snps.pdf  used on input line 264.
+(pdftex.def)             Requested size: 252.0pt x 206.61292pt.
+<../figures/fig13_transfer.pdf, id=387, 515.89467pt x 293.77751pt>
+File: ../figures/fig13_transfer.pdf Graphic file (type pdf)
+<use ../figures/fig13_transfer.pdf>
+Package pdftex.def Info: ../figures/fig13_transfer.pdf  used on input line 281.
+(pdftex.def)             Requested size: 516.0pt x 293.84401pt.
+<../figures/fig14_portability.pdf, id=388, 509.28737pt x 256.3772pt>
+File: ../figures/fig14_portability.pdf Graphic file (type pdf)
+<use ../figures/fig14_portability.pdf>
+Package pdftex.def Info: ../figures/fig14_portability.pdf  used on input line 288.
+(pdftex.def)             Requested size: 516.0pt x 259.77216pt.
+<../figures/fig16_mirror_manhattan_ASD.pdf, id=391, 513.15807pt x 206.33546pt>
+File: ../figures/fig16_mirror_manhattan_ASD.pdf Graphic file (type pdf)
+<use ../figures/fig16_mirror_manhattan_ASD.pdf>
+Package pdftex.def Info: ../figures/fig16_mirror_manhattan_ASD.pdf  used on input line 297.
+(pdftex.def)             Requested size: 516.0pt x 207.4904pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8 <../figures/fig06_r2_concordance.pdf>]
+Underfull \vbox (badness 2426) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <../figures/fig04_yield.pdf> <../figures/fig08_weight_agreement.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <../figures/fig09_shared_predictors.pdf> <../figures/fig10_decomposition_triangle.pdf>]
+<../figures/fig17_mirror_manhattan_four.pdf, id=479, 505.34763pt x 313.97583pt>
+File: ../figures/fig17_mirror_manhattan_four.pdf Graphic file (type pdf)
+<use ../figures/fig17_mirror_manhattan_four.pdf>
+Package pdftex.def Info: ../figures/fig17_mirror_manhattan_four.pdf  used on input line 304.
+(pdftex.def)             Requested size: 516.0pt x 320.6152pt.
+<../figures/figS1_qq.pdf, id=481, 509.51236pt x 160.89685pt>
+File: ../figures/figS1_qq.pdf Graphic file (type pdf)
+<use ../figures/figS1_qq.pdf>
+Package pdftex.def Info: ../figures/figS1_qq.pdf  used on input line 316.
+(pdftex.def)             Requested size: 516.0pt x 162.9489pt.
+<../figures/fig18_specific_hits.pdf, id=483, 446.2237pt x 253.60811pt>
+File: ../figures/fig18_specific_hits.pdf Graphic file (type pdf)
+<use ../figures/fig18_specific_hits.pdf>
+Package pdftex.def Info: ../figures/fig18_specific_hits.pdf  used on input line 330.
+(pdftex.def)             Requested size: 516.0pt x 293.28783pt.
+ [11 <../figures/fig11_component_signs.pdf>]
+<../figures/fig19_cross_disorder.pdf, id=514, 492.79613pt x 222.05798pt>
+File: ../figures/fig19_cross_disorder.pdf Graphic file (type pdf)
+<use ../figures/fig19_cross_disorder.pdf>
+Package pdftex.def Info: ../figures/fig19_cross_disorder.pdf  used on input line 339.
+(pdftex.def)             Requested size: 516.0pt x 232.53412pt.
+ [12 <../figures/fig12_locus_DNAJB7.pdf>] [13 <../figures/fig20_replicates.pdf> <../figures/fig15_model_snps.pdf>]
+
+LaTeX Warning: Text page 14 contains only floats.
+
+
+Overfull \vbox (14.08022pt too high) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 14 contains only floats.
+
+
+Overfull \vbox (14.08022pt too high) has occurred while \output is active []
+
+ [14 <../figures/fig13_transfer.pdf> <../figures/fig14_portability.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [15 <../figures/fig16_mirror_manhattan_ASD.pdf> <../figures/fig17_mirror_manhattan_four.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [16 <../figures/figS1_qq.pdf> <../figures/fig18_specific_hits.pdf>] (./ibeji.bbl
+Underfull \vbox (badness 1057) has occurred while \output is active []
+
+ [17 <../figures/fig19_cross_disorder.pdf>] [18])
+
+** Conference Paper **
+Before submitting the final camera ready copy, remember to:
+
+ 1. Manually equalize the lengths of two columns on the last page
+ of your paper;
+
+ 2. Ensure that any PostScript and/or PDF output post-processing
+ uses only Type 1 fonts and that every step in the generation
+ process uses the appropriate paper size.
+
+[19
+
+] (./ibeji.aux)
+ ***********
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-08-10>
+ ***********
+Package rerunfilecheck Info: File `ibeji.out' has not changed.
+(rerunfilecheck)             Checksum: 2209863A69DAEEA639767967F4678AE0;5793.
+ ) 
+Here is how much of TeX's memory you used:
+ 11249 strings out of 469046
+ 181113 string characters out of 5456635
+ 643127 words of memory out of 5000000
+ 40090 multiletter control sequences out of 15000+600000
+ 663023 words of font info for 109 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 74i,8n,79p,1673b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on ibeji.pdf (19 pages, 2674046 bytes).
+PDF statistics:
+ 884 PDF objects out of 1000 (max. 8388607)
+ 642 compressed objects within 7 object streams
+ 120 named destinations out of 1000 (max. 500000)
+ 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+
