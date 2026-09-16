@@ -25,9 +25,18 @@ r = pd.read_csv(ROOT / "results/figdata/fig18_specific_hits.tsv", sep="\t")
 ORDER = [("no usable model in the other ancestry", vs.COVERAGE, "no usable model\nin the other ancestry"),
          ("weights", vs.PHI_W, "weights"),
          ("allele frequency", vs.PHI_D, "allele frequency"),
-         ("linkage disequilibrium", vs.PHI_R, "linkage disequilibrium")]
+         ("linkage disequilibrium", vs.PHI_R, "linkage disequilibrium"),
+         ("decomposition undefined", vs.MUTED, "decomposition undefined")]
 TRAITS = ["Schizophrenia", "Bipolar disorder", "Major depression", "PTSD"]
 SIDES = [("European models", vs.EUR), ("Yoruba models", vs.YRI)]
+
+# Both panels iterate over ORDER only, and panel b takes its percentage denominator from the
+# classes it finds there, so a class missing from ORDER would vanish from the figure AND
+# quietly change every percentage. This figure has already been redesigned once for silently
+# dropping rows; refuse to draw rather than do it again.
+unknown = sorted(set(r.klass) - {k for k, _, _ in ORDER})
+if unknown:
+    raise SystemExit(f"classes absent from ORDER would be dropped silently: {unknown}")
 
 vs.apply()
 fig = plt.figure(figsize=(vs.DOUBLE, 3.7))
@@ -68,12 +77,13 @@ ax.set_xlabel("associations found with one model set and not the other")
 ax.grid(True, axis="x"); ax.set_axisbelow(True)
 # Shortened: the long form reached across the gap and collided with panel b's letter.
 ax.set_title("Why an association is ancestry-specific", fontsize=8.5,
-             color=vs.INK, loc="left", pad=52)
+             color=vs.INK, loc="left", pad=64)
 # Two rows: the first label alone is about 1.9 in against a 2.86 in panel, so three
 # entries cannot share a line.
-LEG = [(0.0, 1.150, vs.COVERAGE, "no usable model in the other ancestry"),
-       (0.0, 1.065, vs.PHI_W, "weights"),
-       (0.34, 1.065, vs.PHI_D, "allele frequency")]
+LEG = [(0.0, 1.235, vs.COVERAGE, "no usable model in the other ancestry"),
+       (0.0, 1.150, vs.PHI_W, "weights"),
+       (0.34, 1.150, vs.PHI_D, "allele frequency"),
+       (0.0, 1.065, vs.MUTED, "decomposition undefined")]
 for x, yy, color, label in LEG:
     ax.add_patch(plt.Rectangle((x, yy - 0.024), 0.024, 0.048, transform=ax.transAxes, color=color,
                                lw=0, clip_on=False))
@@ -91,9 +101,9 @@ bx.spines["left"].set_visible(False)
 bx.set_xlim(0, 100)
 bx.set_xticks([0, 50, 100]); bx.set_xticklabels(["0%", "50%", "100%"])
 bx.xaxis.ibeji_value_of = lambda v: v
-bx.set_xlabel("share of all 129")
+bx.set_xlabel(f"share of all {tot}")
 bx.grid(True, axis="x"); bx.set_axisbelow(True)
-bx.set_title("All disorders", fontsize=8.5, color=vs.INK, loc="left", pad=52)
+bx.set_title("All disorders", fontsize=8.5, color=vs.INK, loc="left", pad=64)
 bx.text(0.0, 1.055, "colours as in panel a", transform=bx.transAxes, fontsize=7.5, color=vs.INK_2, va="bottom")
 
 for a_, letter in ((ax, "a"), (bx, "b")):

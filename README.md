@@ -60,7 +60,7 @@ Before any model is trained, the two samples differ. Of 17.3 million common vari
 
 ![What predicts whether a model still works in the other population](figures/fig14_portability.png)
 
-**For association studies, the usual reason a hit is ancestry-specific is not disagreement. It is absence.** Across four disorders, 129 gene associations reached significance with one model set and not the other. For 98 of them, 76 percent, the other ancestry never produced a usable model for that gene, so there is nothing to decompose. Among the 31 where both models exist, the weights term is largest for 27 and allele frequency for 4.
+**For association studies, the usual reason a hit is ancestry-specific is not disagreement. It is absence.** Across four disorders, 134 gene associations reached significance with one model set and not the other. For 102 of them, 76 percent, the other ancestry never produced a usable model for that gene, so there is nothing to decompose. Among the 32 where both models exist, the weights term is largest for 26 and allele frequency for 5.
 
 ![Why an association appears with one ancestry's models and not the other](figures/fig18_specific_hits.png)
 
