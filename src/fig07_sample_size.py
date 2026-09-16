@@ -75,6 +75,19 @@ ax.set_title("Per gene, small against large", fontsize=8.5, color=vs.INK, loc="l
 ax.text(0.0, 1.03, f"{len(real):,} genes usable in both\nline: equal accuracy", transform=ax.transAxes,
         fontsize=7.5, color=vs.INK_2, va="bottom")
 
+# Density key. Without it the grey ramp is an unexplained colour, which the manual checklist
+# forbids, and Figure 10's equivalent hexbin panel carries the same key. The label sits beside
+# the bar rather than under it, because a stacked label runs off the bottom of a 3.3 in figure.
+cax = fig.add_axes([0.105, 0.052, 0.115, 0.018])
+cb = fig.colorbar(hb, cax=cax, orientation="horizontal")
+cb.outline.set_visible(False)
+cb.ax.tick_params(labelsize=7, length=2, colors=vs.INK_2, pad=1.5)
+# Plain "1" and "10", not 10^0 and 10^1. Figure 10's colorbar shows the same quantity and
+# uses this formatter; two different labellings of "genes per hexagon" in one paper is a
+# reader's problem, not a style preference.
+cb.ax.xaxis.set_major_formatter(plt.FuncFormatter(lambda v, _: f"{v:g}"))
+fig.text(0.232, 0.061, "genes per hexagon", fontsize=7.5, color=vs.INK_2, va="center")
+
 bins = np.linspace(-0.35, 0.35, 121)
 centres = 0.5 * (bins[:-1] + bins[1:])
 def smooth(y, k=7):
@@ -87,7 +100,11 @@ for vals, color, label in ((d_null, vs.MUTED, f"two draws of 87\n(what noise alo
     bx.plot(centres, y, color=color, lw=1.6, zorder=3)
     bx.plot([vals.median()] * 2, [0, 1.06], color=color, lw=0.9, ls=(0, (3, 2)), zorder=4)
 bx.axvline(0, color=vs.INK_2, lw=0.7, zorder=1)
-bx.set_xlim(bins[0], bins[-1]); bx.set_ylim(0, 1.24)
+# Headroom for the legend. The curves are normalised to peak at 1.0 and the median rules are
+# drawn to 1.06, so the legend rows have to clear both. At the old limit of 1.24 the second
+# row sat at data y 0.968 to 1.038 and the blue curve ran straight through it. Measured, not
+# eyeballed: the curve reaches 1.000 inside that row's x range.
+bx.set_xlim(bins[0], bins[-1]); bx.set_ylim(0, 1.35)
 bx.set_yticks([])
 bx.spines["left"].set_visible(False)
 bx.set_xlabel("change in cross-validated R² per gene")
@@ -96,7 +113,7 @@ bx.text(0.0, 1.03, f"dashed: medians, {d_null.median():+.3f} null and {d_real.me
         transform=bx.transAxes, fontsize=7.5, color=vs.INK_2, va="bottom")
 for i, (color, label) in enumerate(((vs.MUTED, "two draws of 87, noise alone"),
                                     (vs.EUR, f"87 against {NICE.get(LARGE, LARGE)}"))):
-    y = 0.90 - 0.10 * i
+    y = 0.93 - 0.075 * i
     bx.add_patch(plt.Rectangle((0.035, y - 0.035), 0.030, 0.055, transform=bx.transAxes, color=color,
                                alpha=0.65, lw=0, zorder=5))
     bx.text(0.082, y - 0.008, label, transform=bx.transAxes, fontsize=7.5, color=vs.INK_2, va="center", zorder=5)

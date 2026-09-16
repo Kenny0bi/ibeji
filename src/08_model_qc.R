@@ -14,7 +14,21 @@ dir.create(qdir, showWarnings = FALSE, recursive = TRUE)
 controls <- c(ERAP2 = "ENSG00000164308", GSTM3 = "ENSG00000134202", CHI3L2 = "ENSG00000064886",
               HLA_DQA1 = "ENSG00000196735", PEX6 = "ENSG00000124587", ZNF880 = "ENSG00000221923")
 
-sets <- list.dirs(file.path(root, "results", "models"), full.names = FALSE, recursive = FALSE)
+# Only sets with all 22 chromosomes. A set that is still training already has a directory but
+# few or no summary files, and load_models would then rbindlist an empty list into a
+# data.table with no columns and die with "object 'cv_r2' not found". This step first ran on
+# 2026-09-16 at 00:38, while EUR87_r3 was training, and failed twice for exactly that reason.
+# Partial sets are skipped rather than reported, because QC on 3 of 22 chromosomes would be
+# a misleading yield number rather than a missing one.
+all_sets <- list.dirs(file.path(root, "results", "models"), full.names = FALSE, recursive = FALSE)
+n_summ <- vapply(all_sets, function(s)
+  length(list.files(file.path(root, "results", "models", s), "summary.tsv$")), integer(1))
+sets <- all_sets[n_summ == 22L]
+if (any(n_summ != 22L)) {
+  message("skipping sets that are not yet complete: ",
+          paste(sprintf("%s (%d/22)", all_sets[n_summ != 22L], n_summ[n_summ != 22L]), collapse = ", "))
+}
+stopifnot(length(sets) > 0)
 yield <- list()
 ctrl <- list()
 for (s in sets) {

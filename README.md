@@ -42,6 +42,10 @@ Before any model is trained, the two samples differ. Of 17.3 million common vari
 
 **The two ancestries produce about the same number of models, for different genes.** At 87 individuals each, 2,286 genes got a usable European model and 2,230 a usable Yoruba model, with median cross-validated R² of 0.081 and 0.078. Only 562 genes cleared the bar in both.
 
+**Quadrupling the sample helps, but less than the raw counts suggest.** Going from 87 Europeans to all 358 took usable models from 2,286 to 5,524 and raised cross-validated R² by a median of 0.046 across the 1,267 genes modelled at both sizes, with 68 percent improving. That has to be read against two independent draws of 87, which already differ by a median of -0.010, so the real gain is about 0.057. The bigger sample does not simply win either: 1,010 genes usable at 87 were not usable at 358, because clearing the cross-validation bar is itself a noisy event at this scale. The median R² among usable models actually falls, from 0.081 to 0.049, because the larger sample lets in weaker genes.
+
+![What four times the sample size buys, measured against what a different draw of the same size already gives](figures/fig07_sample_size.png)
+
 **Where both models pick the same variant, they agree about it. They rarely pick the same variant.** On the 2,113 SNP and gene pairs both models selected, the weights correlate at r = 0.589 and 98.5 percent share a sign. But that is only about a tenth of either model set's predictors, and 39.7 percent of the 562 genes share no variant at all. Those two facts get quoted separately all the time. Reporting the correlation without the overlap rate makes the models sound far more similar than they are.
 
 **The biggest part of the disagreement is mostly noise, and I would have missed that without a control.** Taken at face value the weights term dominates: median absolute components are 0.75 for weights, 0.25 for allele frequency and 0.13 for LD. So I ran the same decomposition between two independent random draws of 87 Europeans, where the frequency and LD parts are zero by construction and any weights difference is pure training noise. That floor is 0.54. About 70 percent of the apparent cross-ancestry weights difference is reproduced by resampling one population, and the floor of the weights term is larger than the frequency and LD terms added together.
@@ -107,7 +111,9 @@ All data are public. Sources, file sizes and checksums are in [docs/DATA.md](doc
 
 ## Status
 
-The decomposition, the noise floor, transfer, portability and all five TWAS runs are complete on the 87-person sets. Training on all 358 Europeans is still running; it is about seven times slower per gene than the 87-person sets, which is expected for nested cross-validation at that sample size. The two figures that compare sample size directly are waiting on it.
+Training on all 358 Europeans finished on 16 September, after about 17 hours. It runs roughly seven times slower per gene than an 87-person set, which is what nested cross-validation at that sample size costs. The decomposition, the noise floor, transfer, portability, the sample-size comparison and all five TWAS runs are done.
+
+Three further draws of 87 Europeans are still training. Each one adds pairs to the within-ancestry noise floor, which at the moment rests on a single pair of draws.
 
 ## Limitations
 

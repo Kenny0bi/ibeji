@@ -188,6 +188,22 @@ The yield itself barely depends on ancestry once sample size is held equal (Fig.
 \label{fig:yield}
 \end{figure*}
 
+\subsection{What Sample Size Alone Buys}
+Training on more individuals of the same ancestry changed both how many genes could be modelled and how well each one was predicted (Fig.~\ref{fig:samplesize}). With all 358 Europeans, 5,524 genes retained a usable model against 2,286 in a draw of 87, a factor of 2.42. Most of that gain was recovered at the final fit rather than at cross-validation: 37\% of cross-validation-significant genes lost their model to an empty final fit at $n = 358$, against 64\% at $n = 87$.
+
+The median cross-validated $R^2$ among usable models fell from 0.081 to 0.049 as the sample grew. This is not a loss of accuracy. A larger sample admits genes whose signal is too weak to clear the threshold at 87 individuals, and those genes enter at the low end, so the median of the enlarged set sits below the median of the smaller one. The comparison that answers the question has to be made per gene.
+
+Among the 1,267 genes usable at both sizes, cross-validated $R^2$ rose by a median of 0.046 and improved for 68.0\% of genes (Wilcoxon $p = 2.8 \times 10^{-68}$). That figure has to be read against what a different draw of the same size already produces. Between two independent draws of 87 Europeans, 699 genes were usable in both and the median change was $-0.010$, with 44.6\% improving. The effect of quadrupling the sample is therefore about 0.057 in median cross-validated $R^2$ beyond the draw-to-draw baseline, and the separation between the two distributions in Fig.~\ref{fig:samplesize}b is what that increase actually buys.
+
+The larger sample did not dominate the smaller one gene by gene. Of the 2,286 genes usable at $n = 87$, 1,010 were not usable at $n = 358$, while 4,242 became usable only at the larger size. Clearing the cross-validation threshold is itself a noisy event at these sample sizes, so a gene can pass in one sample and fail in a four times larger one. This is the same instability that the within-ancestry noise floor measures for the decomposition, appearing here in which genes obtain a model at all.
+
+\begin{figure*}[!t]
+\centering
+\includegraphics[width=\textwidth]{fig07_sample_size}
+\caption{What sample size alone buys. (a) Cross-validated $R^2$ per gene for the 1,267 genes usable both in a draw of 87 Europeans and in all 358, on square-root axes, with the line of equal accuracy. (b) The paired per-gene change from 87 to 358 individuals, drawn against the change between two independent draws of 87, which is what resampling one population at fixed size already gives. Dashed rules mark the two medians.}
+\label{fig:samplesize}
+\end{figure*}
+
 \subsection{Different Predictors, Similar Weights}
 Where the two models selected the same SNP for the same gene, they agreed closely about it (Fig.~\ref{fig:weights}). Across the 2,113 SNP and gene pairs chosen by both, the two weights correlated at $r = 0.589$ and 98.5\% (2,082 of 2,113) carried the same sign. The agreement was not produced by a few large weights: sign agreement stayed above 97\% in every sixth of the weight-size distribution, while the correlation of the weights rose from 0.01 in the smallest sixth to 0.64 in the largest, as expected when small weights are dominated by noise. Neither ancestry systematically received the larger weight, which was European for 40.3\% of shared SNPs. These values are close to those reported for ancestry-specific models trained in brain tissue in a different cohort~\cite{jajoo2025}, which the present result reproduces independently in lymphoblastoid cell lines.
 

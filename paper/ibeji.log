@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.29)  15 SEP 2026 13:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.29)  16 SEP 2026 00:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -387,139 +387,145 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 51.
  (/Users/macbookpro/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [2] [3]
-<../figures/fig01_design.pdf, id=259, 415.48024pt x 182.88503pt>
+<../figures/fig01_design.pdf, id=263, 415.48024pt x 182.88503pt>
 File: ../figures/fig01_design.pdf Graphic file (type pdf)
 <use ../figures/fig01_design.pdf>
 Package pdftex.def Info: ../figures/fig01_design.pdf  used on input line 136.
 (pdftex.def)             Requested size: 516.0pt x 227.1518pt.
-<../figures/fig02_frequency_landscape.pdf, id=261, 518.19954pt x 494.40836pt>
+<../figures/fig02_frequency_landscape.pdf, id=265, 518.19954pt x 494.40836pt>
 File: ../figures/fig02_frequency_landscape.pdf Graphic file (type pdf)
 <use ../figures/fig02_frequency_landscape.pdf>
 Package pdftex.def Info: ../figures/fig02_frequency_landscape.pdf  used on input line 146.
 (pdftex.def)             Requested size: 516.0pt x 492.31743pt.
-<../figures/fig03_ld_decay.pdf, id=263, 521.55815pt x 192.99063pt>
+<../figures/fig03_ld_decay.pdf, id=267, 521.55815pt x 192.99063pt>
 File: ../figures/fig03_ld_decay.pdf Graphic file (type pdf)
 <use ../figures/fig03_ld_decay.pdf>
 Package pdftex.def Info: ../figures/fig03_ld_decay.pdf  used on input line 155.
 (pdftex.def)             Requested size: 516.0pt x 190.95235pt.
-<../figures/fig05_accuracy_mirror.pdf, id=265, 519.35307pt x 191.59238pt>
+<../figures/fig05_accuracy_mirror.pdf, id=269, 519.35307pt x 191.59238pt>
 File: ../figures/fig05_accuracy_mirror.pdf Graphic file (type pdf)
 <use ../figures/fig05_accuracy_mirror.pdf>
 Package pdftex.def Info: ../figures/fig05_accuracy_mirror.pdf  used on input line 165.
 (pdftex.def)             Requested size: 516.0pt x 190.36694pt.
-<../figures/fig06_r2_concordance.pdf, id=267, 252.35178pt x 250.31882pt>
+<../figures/fig06_r2_concordance.pdf, id=271, 252.35178pt x 250.31882pt>
 File: ../figures/fig06_r2_concordance.pdf Graphic file (type pdf)
 <use ../figures/fig06_r2_concordance.pdf>
 Package pdftex.def Info: ../figures/fig06_r2_concordance.pdf  used on input line 174.
 (pdftex.def)             Requested size: 252.0pt x 249.97443pt.
  [4]
-<../figures/fig04_yield.pdf, id=280, 489.83603pt x 242.91214pt>
+<../figures/fig04_yield.pdf, id=284, 489.83603pt x 242.91214pt>
 File: ../figures/fig04_yield.pdf Graphic file (type pdf)
 <use ../figures/fig04_yield.pdf>
 Package pdftex.def Info: ../figures/fig04_yield.pdf  used on input line 186.
 (pdftex.def)             Requested size: 516.0pt x 255.89552pt.
-<../figures/fig08_weight_agreement.pdf, id=284, 489.02664pt x 251.48392pt>
-File: ../figures/fig08_weight_agreement.pdf Graphic file (type pdf)
-<use ../figures/fig08_weight_agreement.pdf>
-Package pdftex.def Info: ../figures/fig08_weight_agreement.pdf  used on input line 200.
-(pdftex.def)             Requested size: 516.0pt x 265.36674pt.
-<../figures/fig09_shared_predictors.pdf, id=285, 508.50267pt x 256.59677pt>
-File: ../figures/fig09_shared_predictors.pdf Graphic file (type pdf)
-<use ../figures/fig09_shared_predictors.pdf>
-Package pdftex.def Info: ../figures/fig09_shared_predictors.pdf  used on input line 207.
-(pdftex.def)             Requested size: 516.0pt x 260.37834pt.
+<../figures/fig07_sample_size.pdf, id=287, 483.49496pt x 244.49323pt>
+File: ../figures/fig07_sample_size.pdf Graphic file (type pdf)
+<use ../figures/fig07_sample_size.pdf>
+Package pdftex.def Info: ../figures/fig07_sample_size.pdf  used on input line 202.
+(pdftex.def)             Requested size: 516.0pt x 260.95976pt.
  [5 <../figures/fig01_design.pdf>]
 Underfull \vbox (badness 2846) has occurred while \output is active []
 
-
-Underfull \vbox (badness 2846) has occurred while \output is active []
-
+<../figures/fig08_weight_agreement.pdf, id=328, 489.02664pt x 251.48392pt>
+File: ../figures/fig08_weight_agreement.pdf Graphic file (type pdf)
+<use ../figures/fig08_weight_agreement.pdf>
+Package pdftex.def Info: ../figures/fig08_weight_agreement.pdf  used on input line 216.
+(pdftex.def)             Requested size: 516.0pt x 265.36674pt.
+<../figures/fig09_shared_predictors.pdf, id=329, 508.50267pt x 256.59677pt>
+File: ../figures/fig09_shared_predictors.pdf Graphic file (type pdf)
+<use ../figures/fig09_shared_predictors.pdf>
+Package pdftex.def Info: ../figures/fig09_shared_predictors.pdf  used on input line 223.
+(pdftex.def)             Requested size: 516.0pt x 260.37834pt.
  [6 <../figures/fig02_frequency_landscape.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<../figures/fig10_decomposition_triangle.pdf, id=345, 516.69637pt x 267.46812pt>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <../figures/fig03_ld_decay.pdf> <../figures/fig05_accuracy_mirror.pdf>]
+<../figures/fig10_decomposition_triangle.pdf, id=383, 516.69637pt x 267.46812pt>
 File: ../figures/fig10_decomposition_triangle.pdf Graphic file (type pdf)
 <use ../figures/fig10_decomposition_triangle.pdf>
-Package pdftex.def Info: ../figures/fig10_decomposition_triangle.pdf  used on input line 227.
+Package pdftex.def Info: ../figures/fig10_decomposition_triangle.pdf  used on input line 243.
 (pdftex.def)             Requested size: 516.0pt x 267.1083pt.
-<../figures/fig11_component_signs.pdf, id=346, 451.70197pt x 253.14073pt>
+<../figures/fig11_component_signs.pdf, id=384, 451.70197pt x 253.14073pt>
 File: ../figures/fig11_component_signs.pdf Graphic file (type pdf)
 <use ../figures/fig11_component_signs.pdf>
-Package pdftex.def Info: ../figures/fig11_component_signs.pdf  used on input line 234.
+Package pdftex.def Info: ../figures/fig11_component_signs.pdf  used on input line 250.
 (pdftex.def)             Requested size: 516.0pt x 289.18213pt.
-<../figures/fig12_locus_DNAJB7.pdf, id=347, 521.86288pt x 409.9473pt>
+<../figures/fig12_locus_DNAJB7.pdf, id=385, 521.86288pt x 409.9473pt>
 File: ../figures/fig12_locus_DNAJB7.pdf Graphic file (type pdf)
 <use ../figures/fig12_locus_DNAJB7.pdf>
-Package pdftex.def Info: ../figures/fig12_locus_DNAJB7.pdf  used on input line 241.
+Package pdftex.def Info: ../figures/fig12_locus_DNAJB7.pdf  used on input line 257.
 (pdftex.def)             Requested size: 516.0pt x 405.37367pt.
- [7 <../figures/fig03_ld_decay.pdf> <../figures/fig05_accuracy_mirror.pdf>]
-Underfull \hbox (badness 4416) in paragraph at lines 251--252
+
+Underfull \hbox (badness 4416) in paragraph at lines 267--268
 []\OT1/ptm/m/n/10 This bounds what the de-com-po-si-tion sup-ports. The
  []
 
-<../figures/fig20_replicates.pdf, id=381, 509.26059pt x 221.71896pt>
+<../figures/fig20_replicates.pdf, id=387, 509.26059pt x 221.71896pt>
 File: ../figures/fig20_replicates.pdf Graphic file (type pdf)
 <use ../figures/fig20_replicates.pdf>
-Package pdftex.def Info: ../figures/fig20_replicates.pdf  used on input line 255.
+Package pdftex.def Info: ../figures/fig20_replicates.pdf  used on input line 271.
 (pdftex.def)             Requested size: 516.0pt x 224.65497pt.
-<../figures/fig15_model_snps.pdf, id=383, 256.31697pt x 210.15036pt>
+<../figures/fig15_model_snps.pdf, id=389, 256.31697pt x 210.15036pt>
 File: ../figures/fig15_model_snps.pdf Graphic file (type pdf)
 <use ../figures/fig15_model_snps.pdf>
-Package pdftex.def Info: ../figures/fig15_model_snps.pdf  used on input line 264.
+Package pdftex.def Info: ../figures/fig15_model_snps.pdf  used on input line 280.
 (pdftex.def)             Requested size: 252.0pt x 206.61292pt.
-<../figures/fig13_transfer.pdf, id=387, 515.89467pt x 293.77751pt>
+[8 <../figures/fig06_r2_concordance.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <../figures/fig04_yield.pdf> <../figures/fig07_sample_size.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <../figures/fig08_weight_agreement.pdf> <../figures/fig09_shared_predictors.pdf>]
+
+LaTeX Warning: Text page 11 contains only floats.
+
+
+Overfull \vbox (7.75449pt too high) has occurred while \output is active []
+
+
+
+LaTeX Warning: Text page 11 contains only floats.
+
+
+Overfull \vbox (7.75449pt too high) has occurred while \output is active []
+
+ [11 <../figures/fig10_decomposition_triangle.pdf> <../figures/fig11_component_signs.pdf>]
+Underfull \vbox (badness 2680) has occurred while \output is active []
+
+<../figures/fig13_transfer.pdf, id=521, 515.89467pt x 293.77751pt>
 File: ../figures/fig13_transfer.pdf Graphic file (type pdf)
 <use ../figures/fig13_transfer.pdf>
-Package pdftex.def Info: ../figures/fig13_transfer.pdf  used on input line 281.
+Package pdftex.def Info: ../figures/fig13_transfer.pdf  used on input line 297.
 (pdftex.def)             Requested size: 516.0pt x 293.84401pt.
-<../figures/fig14_portability.pdf, id=388, 509.28737pt x 256.3772pt>
+<../figures/fig14_portability.pdf, id=522, 509.28737pt x 256.3772pt>
 File: ../figures/fig14_portability.pdf Graphic file (type pdf)
 <use ../figures/fig14_portability.pdf>
-Package pdftex.def Info: ../figures/fig14_portability.pdf  used on input line 288.
+Package pdftex.def Info: ../figures/fig14_portability.pdf  used on input line 304.
 (pdftex.def)             Requested size: 516.0pt x 259.77216pt.
-<../figures/fig16_mirror_manhattan_ASD.pdf, id=391, 513.15807pt x 206.33546pt>
+<../figures/fig16_mirror_manhattan_ASD.pdf, id=525, 513.15807pt x 206.33546pt>
 File: ../figures/fig16_mirror_manhattan_ASD.pdf Graphic file (type pdf)
 <use ../figures/fig16_mirror_manhattan_ASD.pdf>
-Package pdftex.def Info: ../figures/fig16_mirror_manhattan_ASD.pdf  used on input line 297.
+Package pdftex.def Info: ../figures/fig16_mirror_manhattan_ASD.pdf  used on input line 313.
 (pdftex.def)             Requested size: 516.0pt x 207.4904pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [8 <../figures/fig06_r2_concordance.pdf>]
-Underfull \vbox (badness 2426) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [9 <../figures/fig04_yield.pdf> <../figures/fig08_weight_agreement.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [10 <../figures/fig09_shared_predictors.pdf> <../figures/fig10_decomposition_triangle.pdf>]
-<../figures/fig17_mirror_manhattan_four.pdf, id=479, 505.34763pt x 313.97583pt>
+ [12 <../figures/fig12_locus_DNAJB7.pdf>]
+<../figures/fig17_mirror_manhattan_four.pdf, id=566, 505.34763pt x 313.97583pt>
 File: ../figures/fig17_mirror_manhattan_four.pdf Graphic file (type pdf)
 <use ../figures/fig17_mirror_manhattan_four.pdf>
-Package pdftex.def Info: ../figures/fig17_mirror_manhattan_four.pdf  used on input line 304.
+Package pdftex.def Info: ../figures/fig17_mirror_manhattan_four.pdf  used on input line 320.
 (pdftex.def)             Requested size: 516.0pt x 320.6152pt.
-<../figures/figS1_qq.pdf, id=481, 509.51236pt x 160.89685pt>
+<../figures/figS1_qq.pdf, id=568, 509.51236pt x 160.89685pt>
 File: ../figures/figS1_qq.pdf Graphic file (type pdf)
 <use ../figures/figS1_qq.pdf>
-Package pdftex.def Info: ../figures/figS1_qq.pdf  used on input line 316.
+Package pdftex.def Info: ../figures/figS1_qq.pdf  used on input line 332.
 (pdftex.def)             Requested size: 516.0pt x 162.9489pt.
-<../figures/fig18_specific_hits.pdf, id=483, 446.2237pt x 253.60811pt>
-File: ../figures/fig18_specific_hits.pdf Graphic file (type pdf)
-<use ../figures/fig18_specific_hits.pdf>
-Package pdftex.def Info: ../figures/fig18_specific_hits.pdf  used on input line 330.
-(pdftex.def)             Requested size: 516.0pt x 293.28783pt.
- [11 <../figures/fig11_component_signs.pdf>]
-<../figures/fig19_cross_disorder.pdf, id=514, 492.79613pt x 222.05798pt>
-File: ../figures/fig19_cross_disorder.pdf Graphic file (type pdf)
-<use ../figures/fig19_cross_disorder.pdf>
-Package pdftex.def Info: ../figures/fig19_cross_disorder.pdf  used on input line 339.
-(pdftex.def)             Requested size: 516.0pt x 232.53412pt.
- [12 <../figures/fig12_locus_DNAJB7.pdf>] [13 <../figures/fig20_replicates.pdf> <../figures/fig15_model_snps.pdf>]
+ [13 <../figures/fig20_replicates.pdf> <../figures/fig15_model_snps.pdf>]
 
 LaTeX Warning: Text page 14 contains only floats.
 
@@ -534,21 +540,32 @@ LaTeX Warning: Text page 14 contains only floats.
 Overfull \vbox (14.08022pt too high) has occurred while \output is active []
 
  [14 <../figures/fig13_transfer.pdf> <../figures/fig14_portability.pdf>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 1968) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [15 <../figures/fig16_mirror_manhattan_ASD.pdf> <../figures/fig17_mirror_manhattan_four.pdf>]
+<../figures/fig18_specific_hits.pdf, id=689, 446.2237pt x 253.60811pt>
+File: ../figures/fig18_specific_hits.pdf Graphic file (type pdf)
+<use ../figures/fig18_specific_hits.pdf>
+Package pdftex.def Info: ../figures/fig18_specific_hits.pdf  used on input line 346.
+(pdftex.def)             Requested size: 516.0pt x 293.28783pt.
+<../figures/fig19_cross_disorder.pdf, id=691, 492.79613pt x 222.05798pt>
+File: ../figures/fig19_cross_disorder.pdf Graphic file (type pdf)
+<use ../figures/fig19_cross_disorder.pdf>
+Package pdftex.def Info: ../figures/fig19_cross_disorder.pdf  used on input line 355.
+(pdftex.def)             Requested size: 516.0pt x 232.53412pt.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+ [16 <../figures/figS1_qq.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [16 <../figures/figS1_qq.pdf> <../figures/fig18_specific_hits.pdf>] (./ibeji.bbl
-Underfull \vbox (badness 1057) has occurred while \output is active []
+ [17 <../figures/fig18_specific_hits.pdf> <../figures/fig19_cross_disorder.pdf>] (./ibeji.bbl [18]
+Underfull \vbox (badness 1270) has occurred while \output is active []
 
- [17 <../figures/fig19_cross_disorder.pdf>] [18])
+)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -560,29 +577,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[19
-
-] (./ibeji.aux)
+[19] (./ibeji.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-08-10>
  ***********
 Package rerunfilecheck Info: File `ibeji.out' has not changed.
-(rerunfilecheck)             Checksum: 2209863A69DAEEA639767967F4678AE0;5793.
+(rerunfilecheck)             Checksum: EBA3E2A945F3E9344EF6AAE338EA3A7D;5999.
  ) 
 Here is how much of TeX's memory you used:
- 11249 strings out of 469046
- 181113 string characters out of 5456635
- 643127 words of memory out of 5000000
- 40090 multiletter control sequences out of 15000+600000
+ 11263 strings out of 469046
+ 181545 string characters out of 5456635
+ 636290 words of memory out of 5000000
+ 40102 multiletter control sequences out of 15000+600000
  663023 words of font info for 109 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 74i,8n,79p,1673b,596s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 74i,8n,79p,1673b,588s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/macbookpro/Library/TinyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ibeji.pdf (19 pages, 2674046 bytes).
+Output written on ibeji.pdf (19 pages, 2773308 bytes).
 PDF statistics:
- 884 PDF objects out of 1000 (max. 8388607)
- 642 compressed objects within 7 object streams
- 120 named destinations out of 1000 (max. 500000)
- 349 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 907 PDF objects out of 1000 (max. 8388607)
+ 658 compressed objects within 7 object streams
+ 122 named destinations out of 1000 (max. 500000)
+ 362 words of extra memory for PDF output out of 10000 (max. 10000000)
 
