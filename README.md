@@ -64,6 +64,8 @@ Before any model is trained, the two samples differ. Of 17.3 million common vari
 
 ![Why an association appears with one ancestry's models and not the other](figures/fig18_specific_hits.png)
 
+**The one autism signal I found is a single LD region, not a discovery.** With models trained on all 358 Europeans I could test 5,369 genes for autism instead of about 2,100, and two crossed the Bonferroni line where none had before. It would have been easy to write that up as two autism genes. But they sit 751 kb apart on chromosome 17, the stronger of the two is a pseudogene, and 10 of the 12 most significant genes fall between 43.5 and 45.0 Mb on that same chromosome. That is one well-tagged locus showing up in many correlated predicted expression traits. Autism is the reason I started this project, so this is the result I most wanted to be real, which is exactly why I looked up the coordinates before believing it.
+
 **Transfer, for scale.** European models applied to Yoruba individuals reach a mean signed r² of 0.048, which lines up with the 0.051 to 0.054 published for the same populations at this sample size and told me the pipeline was behaving. The median model transfers essentially nothing. Well-predicted Yoruba models keep about 82 percent of their accuracy in European individuals, while well-predicted European models keep about 41 percent.
 
 ## Three things that went wrong, and what they taught me
