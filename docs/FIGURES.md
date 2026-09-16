@@ -41,6 +41,8 @@ Minimum 17 figures in the paper; at least 5 in the README. Every figure listed h
 
 ## Planned figures
 
+The `#` column is the script number (`src/figNN_*.py`), which is the order these were built in. The paper numbers figures by order of first appearance, and the two orders are not the same, so a row here does not always match the figure number printed in the PDF. Twelve of the twenty-one differ: script 4 prints as Figure 6, 5 as 4, 6 as 5, 13 as 15, 14 as 16, 15 as 14, 16 as 17, 17 as 18, 18 as 20, 19 as 21, 20 as 13, and S1 as 19. The other nine match. Scripts 1, 2, 3, 7 and 8 through 12 are unaffected.
+
 | # | Working title | Form | What it shows | Status |
 |---|---|---|---|---|
 | 1 | Twin design | One dot per person (445), European arm mirrored above the Yoruba arm; EUR87 draw 1 filled, rest hollow; real DNAJB7 weight stems (EUR87_r1 above, YRI87 below, square-root height); decomposition and TWAS panels | 445 genomes split into EUR358, EUR87 x5 and YRI87; elastic net; decomposition and TWAS branches | done: layout check OK, inspected 2026-09-14 (`src/fig01_design.py`) |
