@@ -111,7 +111,11 @@ python3 src/test_viz_checks.py   # 11 cases proving the checks catch what they c
 
 All data are public. Sources, file sizes and checksums are in [docs/DATA.md](docs/DATA.md).
 
-## Status
+### R
+
+The core of this project was already R: `src/03_train_grex.R` fits the elastic net, `src/05_decompose.R` does the Shapley decomposition, and `src/06_twas.R`, `src/08_model_qc.R`, `src/09_export_predictdb.R`, `src/10_transfer_all.R` and `src/lib_geno.R` carry the rest. The remaining Python scripts now have R versions beside them.
+
+The R has not been run end to end, and every published number came from the original scripts. One warning: `src/00_sample_lists.R` will not reproduce the existing downsamples, because R's `sample()` and pandas' `.sample()` are different generators. It would draw five valid but different European sets and overwrite the sample lists the trained models depend on.
 
 Training on all 358 Europeans finished on 16 September, after about 17 hours. It runs roughly seven times slower per gene than an 87-person set, which is what nested cross-validation at that sample size costs. The decomposition, the noise floor, transfer, portability, the sample-size comparison and all five TWAS runs are done.
 
